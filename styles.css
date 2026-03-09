@@ -1,11 +1,9 @@
-styles.css
-
 body {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #222222;
-    background-color: #FF746C; /* soft, easy-on-the-eyes background */
+    background-color: #FF746C; 
     margin: 20px;
     padding: 0;
 }
@@ -13,7 +11,7 @@ body {
 h1 {
     font-family: 'Georgia', serif;
     font-size: 2.5rem;
-    color: #8B0000; /* standout blue for main title */
+    color: #8B0000; 
     margin-bottom: 20px;
     text-align: center;
 }
@@ -21,7 +19,7 @@ h1 {
 h2 {
     font-family: 'Georgia', serif;
     font-size: 1.8rem;
-    color: #8B0000; /* slightly darker blue */
+    color: #8B0000; 
     margin-top: 30px;
     margin-bottom: 15px;
     border-bottom: 2px solid #ccc;
@@ -78,20 +76,35 @@ section {
 }
 
 footer {
-    text-align: center; /* centers everything inside the footer */
-    margin-top: 30px;   /* space above the footer */
+    text-align: center; 
+    margin-top: 30px;   
 }
 
 footer .icon {
-    width: 60px;        /* smaller icon size */
-    height: auto;       /* keeps proportions */
+    width: 60px;        
+    height: auto;       
     display: inline-block;
     margin: 10px 0;
-    transition: transform 0.3s ease; /* smooth hover effect */
+    transition: transform 0.3s ease; 
     cursor: pointer;
 }
 
 footer .icon:hover {
-    transform: scale(1.2); /* zooms slightly when hovered */
+    transform: scale(1.2); 
 }
 
+.container {
+    border: 2px dashed #ff6f61; /* red dashed container */
+    padding: 10px;
+}
+
+.row {
+    border: 2px dotted #4caf50; /* green dotted row */
+    margin-bottom: 10px;
+}
+
+[class*="col-"] {
+    border: 2px solid #2196f3; /* blue solid column */
+    min-height: 50px; /* visible even if empty */
+    padding: 10px;
+}

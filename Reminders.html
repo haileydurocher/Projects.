@@ -1,68 +1,90 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<!--
+  <head>
+  	<!--
 AI Use Disclosure:
 Tool(s): ChatGPT (free version)
-Purpose: Helped explain how to create better visual hierarchy using font sizes and spacing.
-Human Role: I chose the colors and fonts, applied the CSS myself, and adjusted spacing for my layout.
+Purpose: Helped explain Bootstrap grid behavior and suggested layout options.
+Human Role: I selected which suggestions to use, modified the layout, and verified responsiveness manually.
 -->
-<link rel="stylesheet" type="text/css" href="styles.css">
-		<title>REMINDERS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reminders App - Keep track of your tasks">
+    <meta name="author" content="YOUR NAME HERE">
+    <title>REMINDERS</title>
 
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-	</head>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
 
-	<body>
-
-<header>
-		<h1>REMINDERS</h1>
-		<p>An app to keep track of all your tasks. </p>
-</header>
-
-  <nav>
-    <ul>
-      <li><a href="#reminders">View reminders</a></li>
-      <li><a href="#add-reminder">Add a reminder</a></li>
-    </ul>
-  </nav>
-
-		
-<main>
-	<section>
-	<h2>Your Reminders</h2>
-
-	<ul>
-	<li>MORNING</li>
-	<li> add a reminder  </li>
-	<li> add a reminder  </li>
-	<li>AFTERNOON</li>
-	<li> add a reminder   </li>
-	<li> add a reminder   </li>
-	<li>NIGHT</li>
-	<li> add a reminder   </li>
-	<li> add a reminder   </li>
-</ul>
-</section>
-
- <section>
- 	<h2>Add a New Reminder</h2>
-      <form>
-        <label for="reminder-text">Reminder description:</label>
-        <input type="text" id="reminder-text" name="reminder-text">
-      </form>
-    </section>
-
-</main>
+    <!-- Header -->
+    <header class="text-center py-5 bg-primary text-white mb-4">
+      <h1 class="display-4">REMINDERS</h1>
+      <p class="lead">An app to keep track of all your tasks</p>
+    </header>
 
 
-<footer>
-<a href="#add-reminder">
-  <img src="pngtree-vector-plus-icon-png-image_515260.jpg" alt="Add a new reminder" class="icon">
-</a>
-</footer>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="#">Reminders</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#reminders">View Reminders</a></li>
+            <li class="nav-item"><a class="nav-link" href="#add-reminder">Add Reminder</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mb-5">
+
+      <!-- Reminders Section -->
+      <section id="reminders" class="mb-5">
+        <h2 class="mb-3">Your Reminders</h2>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-secondary">MORNING</li>
+          <li class="list-group-item">Add a reminder</li>
+          <li class="list-group-item">Add a reminder</li>
+          <li class="list-group-item list-group-item-secondary">AFTERNOON</li>
+          <li class="list-group-item">Add a reminder</li>
+          <li class="list-group-item">Add a reminder</li>
+          <li class="list-group-item list-group-item-secondary">NIGHT</li>
+          <li class="list-group-item">Add a reminder</li>
+          <li class="list-group-item">Add a reminder</li>
+        </ul>
+      </section>
+
+      <!-- Add Reminder Form -->
+      <section id="add-reminder" class="mb-5">
+        <h2 class="mb-3">Add a New Reminder</h2>
+        <form class="row g-3">
+          <div class="col-md-8">
+            <label for="reminder-text" class="form-label">Reminder description:</label>
+            <input type="text" id="reminder-text" name="reminder-text" class="form-control" placeholder="Enter your reminder">
+          </div>
+          <div class="col-md-4 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary w-100">Add Reminder</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
 
 
-</body>
+    <footer class="text-center py-4 bg-white shadow-sm">
+      <a href="#add-reminder">
+        <img src="pngtree-vector-plus-icon-png-image_515260.jpg" alt="Add a new reminder" class="img-fluid" style="width:40px;">
+      </a>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  </body>
 </html>
